@@ -1,0 +1,488 @@
+body{
+    background-image: url('bg.jpg');
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color:#ECE8E1;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    padding: 0px;
+    width: 100%;
+    background-color: black;
+    color :white;
+    display: flex;
+    position: relative;
+}
+
+header div{
+    float: left;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    margin-left: 25%;
+    padding: 20px 10px;
+    margin-top: 5px;
+    position: absolute;
+}
+
+header .logo img{
+    height: 40px;
+    width:auto;
+}
+
+
+header .navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50%;
+}
+
+
+.navbar ul{
+    list-style: none;
+
+}
+
+
+.navbar ul li{
+   
+    width: 110px;
+    height: 50px;
+    text-align: center;
+    float: left;
+    color:#444444;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 50px;
+}
+
+.navbar ul li:hover{
+        background-color: #444444;
+        transition: all ease-in;
+        border-radius: 25px;
+}
+
+.navbar ul ul li{
+    font-size: 15px;
+    overflow: hidden;
+    margin-left: -10px;
+    background-color:#292929;
+}
+
+.navbar ul ul li:hover{
+    color: #ECE8E1;
+    width:125%;
+    transition: all ease 0.3s;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+} 
+
+.navbar ul ul{
+    display: none;
+    line-height: 50px;
+    margin: 0px;
+    padding:0px;
+}
+
+.navbar ul li:hover > ul{
+    display: block;
+    
+}
+
+#home{
+    width: 100%;
+    height: 800px;
+    display: flex;
+}
+
+.home-title{
+    margin-left: 230px;
+    margin-top: 150px;
+    font-size: 80px;
+    text-transform: uppercase;
+    line-height: .8;
+    margin-bottom: 20px;
+}
+
+.home-title h1{
+    margin-bottom: 40px;
+}
+
+#home .home-title input{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-top: 0px;
+    padding: 10px 15px;
+    border: 1px solid black;
+    color: #fff;
+    background-color: #444444;
+    border-radius: 50px;
+}
+
+#home .home-title input:hover{
+    color: #444444;
+    background-color: #ECE8E1;
+    transition: all ease-in 0.2s;
+}
+
+.home-title span{
+    color: #FD5B67;
+    font-style: italic;
+}
+
+.reyna-kj{
+    height: 800px;
+    width: auto;
+    margin-top: 20px;
+    justify-content: right;
+    margin-left: 350px;
+    margin-right: 0px;
+    display: flex;
+}
+
+#blog{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.title{
+    margin-top: 50px;
+    margin-bottom: 0px;
+    text-align: center;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    line-height: .1;
+    padding: 20px 0px 0px 0px;
+
+}
+
+.title h3{
+    font-size: 25px;
+    margin: 0px;
+    padding: 0px;
+    text-transform: uppercase;
+}
+
+.title h2{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.title h2 span{
+    color: #FD5B67;
+}
+
+.title p{
+    font-size: 20px;
+}
+
+.blog-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+
+.blog-box{
+    width: 350px;
+    background-color: #ffffff;
+    border: 1px solid #eceece;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.blog-box:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+.blog-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.blog-text{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-text span{
+    color: #FF4655;
+    font-size: 0.9rem;
+}
+
+.blog-text a{
+    text-decoration: none;
+}
+
+.blog-text .blog-title{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #444444;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.blog-text .blog-title:hover{
+    color: #FD5B67;
+    transition: all ease-in 0.3s;
+}
+
+.blog-text p{
+    color: #292929;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0px;
+}
+
+.blog-text a{
+    color: #0E181B;
+}
+
+.blog-text a:hover{
+    color: #FD5B67;
+    transition: all ease-in 0.3s;
+}
+
+#players{
+    display: flex;
+    padding: 100px;
+    height: 800px;
+    display: flex;
+    margin-top: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    background-image: url(revelation.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: 0;
+
+}
+
+#players .play-title{
+    margin: 350px 100px 0px 100px;
+    margin-top: 150px;
+    font-size: 65px;
+    margin-right: 60px;
+    text-transform: uppercase;
+    line-height: .8;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#players .play-title h1{
+    margin-bottom: 40px;
+}
+
+#players .play-title input{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-top: 0px;
+    padding: 10px 15px;
+    border: 1px solid black;
+    color: #fff;
+    background-color: #444444;
+    border-radius: 50px;
+}
+
+#players .play-title input:hover{
+    color: #444444;
+    background-color: #ECE8E1;
+    transition: all ease-in 0.2s;
+}
+
+#players .post-img{
+    height: 700px;
+    width: auto;
+    margin-top: 20px;
+    justify-content: right;
+    margin-left:100px;
+    margin-right: 0px;
+    display: flex;
+}
+
+#players-title {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    margin-top: 0px;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Bebas Neue', cursive;
+    height:450px;
+    width: 100%;
+    color: #ECE8E1;
+    background-color: #0E181B;
+    line-height: 40px;
+}
+
+#players-title h1 span{
+    color: #FD5B67;
+}
+
+#card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 20%;
+  }
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 350px;
+    height: 650px;
+    margin: 25px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    justify-content: center;
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0px 20px 0px 20px; 
+    background-color: #444444;
+  }
+  
+  .card-content h2 {
+    text-transform: uppercase;
+    font-size: 1;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ECE8E1;
+  }
+
+  .card-content .ab{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+.btn {
+    padding: auto;
+    margin: 0 auto;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #444444;
+    border-radius: 15px;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #292929;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #292929;
+  }
+  
+footer{
+    height: 250px;
+    position: absolute;
+    margin-bottom: 0px;
+    margin-top: 10%;
+    text-align: center;
+    background-color: #292929;
+    width: 100%;
+    color: white;
+
+}
+footer .name h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-top: 15px;
+    margin-top: 0px;
+    padding-bottom:5px;
+    font-size: 40px;
+}
+
+footer .text{
+    width:800px;
+    text-align: center;
+    margin: 0px auto;
+    margin-top: -30px;
+}
+
+footer .icon i{
+    font-size: 25px;
+    line-height: 40px;
+    position:relative;
+    top: -10px;
+    padding: 0px 9px;
+    text-decoration: none;
+    color: white;
+}
+
+footer section h3{
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+
+
